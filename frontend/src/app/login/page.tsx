@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -20,7 +20,11 @@ export default function Login() {
         window.location.href = '/dashboard';
       }
     } catch (error) {
-      alert('Error: ' + error.response?.data?.error || 'Something went wrong');
+      if (error instanceof AxiosError) {
+        alert('Error: ' + error.response?.data?.error || 'Something went wrong');
+      } else {
+        alert('Something went wrong');
+      }
     }
   };
 
