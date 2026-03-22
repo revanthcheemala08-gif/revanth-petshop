@@ -14,7 +14,7 @@ export default function About() {
         <h1 className="text-4xl font-bold text-center mb-8">About Revanth Pet World</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <img src="/about-image.jpg" alt="About Us" className="w-full h-64 object-cover rounded-lg" />
+            <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?w=600&h=400&fit=crop" alt="About Us" className="w-full h-64 object-cover rounded-lg" />
           </div>
           <div>
             <p className="text-lg mb-4">

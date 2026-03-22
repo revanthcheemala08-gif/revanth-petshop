@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   const categories = [
-    { name: 'Pet Sales', href: '/category/sales', image: '/pet-sales.jpg' },
-    { name: 'Pet Accessories', href: '/category/accessories', image: '/accessories.jpg' },
-    { name: 'Pet Food', href: '/category/food', image: '/pet-food.jpg' },
-    { name: 'Clinical Appointments', href: '/category/appointments', image: '/appointments.jpg' },
+    { name: 'Pet Sales', href: '/category/sales', image: 'https://images.unsplash.com/photo-1544568100-847a948585b9?w=400&h=300&fit=crop' },
+    { name: 'Pet Accessories', href: '/category/accessories', image: 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400&h=300&fit=crop' },
+    { name: 'Pet Food', href: '/category/food', image: 'https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=400&h=300&fit=crop' },
+    { name: 'Clinical Appointments', href: '/category/appointments', image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop' },
   ];
 
   return (
@@ -22,7 +22,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg shadow-lg"
           >
-            <img src="/logo.png" alt="Revanth Pet World" className="h-20 mb-4" />
+            <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=100&h=100&fit=crop&crop=center" alt="Revanth Pet World" className="h-20 mb-4 rounded-full" />
             <h2 className="text-4xl font-bold mb-2">Revanth Pet World</h2>
             <p className="text-lg">Your trusted pet care partner</p>
           </motion.div>

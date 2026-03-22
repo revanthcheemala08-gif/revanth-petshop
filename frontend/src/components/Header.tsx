@@ -10,7 +10,7 @@ export default function Header() {
     <header className="bg-blue-600 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo.png" alt="Revanth Pet World" className="h-10 mr-2" />
+          <img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?w=40&h=40&fit=crop&crop=center" alt="Revanth Pet World" className="h-10 mr-2 rounded-full" />
           <h1 className="text-xl font-bold">Revanth Pet World</h1>
         </div>
         <nav className="flex space-x-4">
