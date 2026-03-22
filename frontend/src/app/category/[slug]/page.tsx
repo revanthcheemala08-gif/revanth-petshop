@@ -18,6 +18,8 @@ export default function CategoryPage() {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
+    if (!slug) return;
+
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`http://localhost:5000/api/products/category/${slug}`);
@@ -28,6 +30,8 @@ export default function CategoryPage() {
     };
 
     fetchProducts();
+  }, [slug]);
+
   const getDefaultImage = (category: string) => {
     const images = {
       sales: 'https://images.unsplash.com/photo-1544568100-847a948585b9?w=400&h=300&fit=crop',
@@ -37,6 +41,8 @@ export default function CategoryPage() {
     };
     return images[category as keyof typeof images] || images.sales;
   };
+
+  return (
     <div className="flex-1 container mx-auto p-4">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -51,7 +57,7 @@ export default function CategoryPage() {
               whileHover={{ scale: 1.05 }}
               className="bg-white p-4 rounded-lg shadow-md"
             >
-              <img src={product.image || getDefaultImage(slug)} alt={product.name} className="w-full h-48 object-cover rounded mb-4" />
+              <img src={product.image || getDefaultImage(slug as string)} alt={product.name} className="w-full h-48 object-cover rounded mb-4" />
               <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
               <p className="text-gray-600 mb-2">{product.description}</p>
               <p className="text-lg font-bold">${product.price}</p>
