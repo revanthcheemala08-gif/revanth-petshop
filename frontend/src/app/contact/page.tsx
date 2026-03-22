@@ -16,10 +16,20 @@ export default function Contact() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
             <p className="mb-2"><strong>Owner:</strong> REVANTH</p>
-            <p className="mb-2"><strong>Phone:</strong> +1 (123) 456-7890</p>
-            <p className="mb-4"><strong>Address:</strong> 123 Pet Street, Pet City, PC 12345</p>
-            <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-              <p>Map Placeholder - Integrate Google Maps here</p>
+            <p className="mb-2"><strong>Phone:</strong> +91 9944978547</p>
+            <p className="mb-2"><strong>Email:</strong> revanthcheemala08@gmail.com</p>
+            <p className="mb-4"><strong>Address:</strong> Tirupati, Andhra Pradesh, India</p>
+            <div className="bg-gray-200 h-64 rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.5!2d79.4167!3d13.0827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab8e4c!2sTirupati%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Tirupati Location"
+              ></iframe>
             </div>
           </div>
           <div>
